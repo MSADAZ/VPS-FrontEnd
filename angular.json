@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "CPM-FrontEnd:build"
+            "browserTarget": "VPS-FrontEnd:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "CPM-FrontEnd:build:production"
+              "browserTarget": "VPS-FrontEnd:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "CPM-FrontEnd:build"
+            "browserTarget": "VPS-FrontEnd:build"
           }
         },
         "test": {
@@ -112,16 +112,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "CPM-FrontEnd:serve"
+            "devServerTarget": "VPS-FrontEnd:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "CPM-FrontEnd:serve:production"
+              "devServerTarget": "VPS-FrontEnd:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "CPM-FrontEnd"
+  "defaultProject": "VPS-FrontEnd"
 }
