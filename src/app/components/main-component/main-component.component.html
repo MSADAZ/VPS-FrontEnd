@@ -111,7 +111,87 @@
     </mat-step>
     <mat-step [stepControl]="secondFormGroup" label="3.2">
         <form [formGroup]="secondFormGroup" class="inputForm">
-            <ng-template matStepLabel>Visa Application Process</ng-template>
+            <ng-template matStepLabel>Passport</ng-template>
+            <div>
+                <mat-label>3.2.1 Nationality: </mat-label>
+            </div>
+            <mat-form-field>
+                <mat-label>Nationality</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="Nationality" required>
+            </mat-form-field>
+            <div>
+                <button mat-raised-button matStepperPrevious color="primary">Back</button>
+                <button mat-raised-button matStepperNext color="primary">Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="3.3">
+        <form [formGroup]="secondFormGroup" class="inputForm">
+            <ng-template matStepLabel>Visa</ng-template>
+            <div>
+                <mat-label>3.2.1 Nationality: </mat-label>
+            </div>
+            <mat-form-field>
+                <mat-label>Nationality</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="Nationality" required>
+            </mat-form-field>
+            <div>
+                <button mat-raised-button matStepperPrevious color="primary">Back</button>
+                <button mat-raised-button matStepperNext color="primary">Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="3.4">
+        <form [formGroup]="secondFormGroup" class="inputForm">
+            <ng-template matStepLabel>Reference and Stay</ng-template>
+            <div>
+                <mat-label>3.2.1 Nationality: </mat-label>
+            </div>
+            <mat-form-field>
+                <mat-label>Nationality</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="Nationality" required>
+            </mat-form-field>
+            <div>
+                <button mat-raised-button matStepperPrevious color="primary">Back</button>
+                <button mat-raised-button matStepperNext color="primary">Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="3.5">
+        <form [formGroup]="secondFormGroup" class="inputForm">
+            <ng-template matStepLabel>People Traveling</ng-template>
+            <div>
+                <mat-label>3.2.1 Nationality: </mat-label>
+            </div>
+            <mat-form-field>
+                <mat-label>Nationality</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="Nationality" required>
+            </mat-form-field>
+            <div>
+                <button mat-raised-button matStepperPrevious color="primary">Back</button>
+                <button mat-raised-button matStepperNext color="primary">Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="3.6">
+        <form [formGroup]="secondFormGroup" class="inputForm">
+            <ng-template matStepLabel>Upload Documents</ng-template>
+            <div>
+                <mat-label>3.6.1 Documents: </mat-label>
+            </div>
+            <mat-form-field>
+                <mat-label>Nationality</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="Nationality" required>
+            </mat-form-field>
+            <div>
+                <button mat-raised-button matStepperPrevious color="primary">Back</button>
+                <button mat-raised-button matStepperNext color="primary">Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="3.7">
+        <form [formGroup]="secondFormGroup" class="inputForm">
+            <ng-template matStepLabel>Ememrgency Contact</ng-template>
             <div>
                 <mat-label>3.2.1 Nationality: </mat-label>
             </div>
