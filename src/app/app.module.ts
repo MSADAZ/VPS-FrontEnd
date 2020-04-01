@@ -9,14 +9,24 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatInputModule} from '@angular/material/input';
+import { MainComponentComponent } from './components/main-component/main-component.component';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher, MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core';
+import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
+import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MainComponentComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,11 +34,25 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     MatMenuModule,
     MatToolbarModule,
-    MatButtonModule
-    
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatStepperModule,
+    MatInputModule,
+    MatSliderModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+
   ],
   providers: [
-   
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher},
+    {
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: { displayDefaultIndicatorType: false }
+    },
+    {provide: MAT_DATE_LOCALE, useValue: 'en-US'},
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
