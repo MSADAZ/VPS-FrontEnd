@@ -10,13 +10,17 @@ import { FooterComponent } from './components/footer/footer.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { ApplyComponent } from './components/apply/apply.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import { FormsModule ,ReactiveFormsModule}   from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ApplyComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,10 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     MatMenuModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [
