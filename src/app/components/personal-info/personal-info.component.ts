@@ -11,11 +11,11 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 }
 
 @Component({
-  selector: 'app-main-component',
-  templateUrl: './main-component.component.html',
-  styleUrls: ['./main-component.component.css']
+  selector: 'app-personal-info',
+  templateUrl: './personal-info.component.html',
+  styleUrls: ['./personal-info.component.css']
 })
-export class MainComponentComponent implements OnInit {
+export class PersonalInfoComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
 
@@ -24,6 +24,7 @@ export class MainComponentComponent implements OnInit {
     {value: 'United States', Code: 'USA'},
     {value: 'United Kingdom', Code: 'UK'}
   ];
+  constructor(private _formBuilder: FormBuilder) {}
 
   emailFormControl = new FormControl('', [
     Validators.required,
@@ -32,16 +33,14 @@ export class MainComponentComponent implements OnInit {
 
   matcher = new MyErrorStateMatcher();
 
-  // tslint:disable-next-line: variable-name
-constructor(private _formBuilder: FormBuilder) {}
+  ngOnInit(){
+      this.firstFormGroup = this._formBuilder.group({
+        firstCtrl: ['', Validators.required]
+      });
+      this.secondFormGroup = this._formBuilder.group({
+        secondCtrl: ['', Validators.required]
+      });
 
-ngOnInit(){
-    this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required]
-    });
-    this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
-    });
+  }
 
-}
 }

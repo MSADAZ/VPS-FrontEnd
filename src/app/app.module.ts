@@ -23,6 +23,10 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import { RegistrationComponent } from './components/registration/registration.component';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
+import { PassportComponent } from './components/passport/passport.component';
+import { VisaInformationComponent } from './components/visa-information/visa-information.component';
+import { ReferenceAndStayComponent } from './components/reference-and-stay/reference-and-stay.component';
 
 import {HttpClientModule} from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
@@ -39,6 +43,10 @@ import { ApplicationProcessComponent } from './components/application-process/ap
     LoginComponent,
     ApplicationProcessComponent,
   
+    PersonalInfoComponent,
+    PassportComponent,
+    VisaInformationComponent,
+    ReferenceAndStayComponent,
   ],
   imports: [
     BrowserModule,
