@@ -19,6 +19,10 @@ import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher, MAT_DATE_LOCALE, MatNa
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
+import { PassportComponent } from './components/passport/passport.component';
+import { VisaInformationComponent } from './components/visa-information/visa-information.component';
+import { ReferenceAndStayComponent } from './components/reference-and-stay/reference-and-stay.component';
 
 
 @NgModule({
@@ -27,6 +31,10 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     HeaderComponent,
     FooterComponent,
     MainComponentComponent,
+    PersonalInfoComponent,
+    PassportComponent,
+    VisaInformationComponent,
+    ReferenceAndStayComponent,
   ],
   imports: [
     BrowserModule,

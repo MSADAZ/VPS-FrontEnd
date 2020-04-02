@@ -1,0 +1,81 @@
+<form [formGroup]="firstFormGroup" class="inputForm">
+    <ng-template matStepLabel>Passport and Nationality</ng-template>
+    <div>
+        <mat-label>3.2.1 Nationality: </mat-label>
+    </div>
+    <mat-form-field>
+        <mat-label>Current Nationality</mat-label>
+        <input matInput formControlName="secondCtrl" placeholder="Nationality" required>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Prior or Other Nationality</mat-label>
+        <input matInput formControlName="secondCtrl" placeholder="PriorNationality" required>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Country By Birth</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let country of countries" [value]="country.value">
+                {{country.Code}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <ng-template [ngIf]="Eritrean">
+
+        <mat-form-field>
+            <mat-label>Eritrean ID</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="Eritrean ID" required>
+        </mat-form-field>
+        <!-- <div>
+                <mat-label>Name In Eritrean ID</mat-label>
+            </div> -->
+        <mat-form-field>
+            <mat-label> First Name</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="name" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label> Father's Name</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="Father's name" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label> Grand Father's Name</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="grand father's name" required>
+        </mat-form-field>
+    </ng-template>
+    <div>
+        <mat-label>3.2.2 Passport: </mat-label>
+    </div>
+    <mat-form-field>
+        <mat-label>Passport Number</mat-label>
+        <input matInput formControlName="secondCtrl" placeholder="Nationality" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Passport Type</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let passport of passportTypes" [value]="passport.name">
+                {{passport.type}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Date of Issue</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label> Expiration Date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Issued By </mat-label>
+        <input matInput formControlName="secondCtrl" placeholder="issuedBy" required>
+    </mat-form-field>
+    <div>
+        <button mat-raised-button matStepperPrevious color="primary">Back</button>
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+    </div>
+</form>

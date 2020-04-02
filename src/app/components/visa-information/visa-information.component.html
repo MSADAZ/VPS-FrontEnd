@@ -1,0 +1,32 @@
+<form [formGroup]="firstFormGroup" class="inputForm">
+
+    <div>
+        <mat-label>3.3.1 Visa: </mat-label>
+    </div>
+    <mat-form-field>
+        <mat-label>Visa Type</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let visa of visaTypes" [value]="visa.type">
+                {{visa.type}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Entry type Single/Multiple</mat-label>
+        <input matInput formControlName="secondCtrl" placeholder="EntryType" required>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Expected Arrival Date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Period of Stay</mat-label>
+        <input matInput formControlName="secondCtrl" placeholder="period of stay" required>
+    </mat-form-field>
+    <div>
+        <button mat-raised-button matStepperPrevious color="primary">Back</button>
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+    </div>
+</form>
