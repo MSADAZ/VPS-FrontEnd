@@ -19,7 +19,6 @@ import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher, MAT_DATE_LOCALE, MatNa
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import {FlexLayoutModule} from "@angular/flex-layout";
 import { RegistrationComponent } from './components/registration/registration.component';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 import {MatCheckboxModule} from '@angular/material/checkbox';
@@ -32,6 +31,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { LoginComponent } from './components/login/login.component';
 import { ApplicationProcessComponent } from './components/application-process/application-process.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -42,11 +42,12 @@ import { ApplicationProcessComponent } from './components/application-process/ap
     RegistrationComponent,
     LoginComponent,
     ApplicationProcessComponent,
-  
+
     PersonalInfoComponent,
     PassportComponent,
     VisaInformationComponent,
     ReferenceAndStayComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,7 +66,6 @@ import { ApplicationProcessComponent } from './components/application-process/ap
     MatDatepickerModule,
     MatNativeDateModule,
     MatCheckboxModule,
-    FlexLayoutModule,
     HttpClientModule,
     MatIconModule
 
