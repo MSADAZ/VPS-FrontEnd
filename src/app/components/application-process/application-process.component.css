@@ -1,0 +1,21 @@
+.mat-stepper-vertical {
+    margin-top: 8px;
+  }
+  
+  .mat-form-field {
+    margin-top: 16px;
+  }
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15%;
+  }
+  .example-margin {
+    margin: 0 10px;
+    display: flex;
+  }
+  .example-full-width {
+    width: 100%;
+  }
