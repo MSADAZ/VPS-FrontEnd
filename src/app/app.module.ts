@@ -19,7 +19,6 @@ import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher, MAT_DATE_LOCALE, MatNa
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import {FlexLayoutModule} from "@angular/flex-layout";
 import { RegistrationComponent } from './components/registration/registration.component';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 import {MatCheckboxModule} from '@angular/material/checkbox';
@@ -32,6 +31,21 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { LoginComponent } from './components/login/login.component';
 import { ApplicationProcessComponent } from './components/application-process/application-process.component';
+import { PendingApplicationComponent } from './components/pending-application/pending-application.component';
+import {MatTableModule} from '@angular/material/table';
+import { HelpfulMaterialModule }   from './components/MatModules';
+import { ClaimedApplicationsComponent } from './components/claimed-applications/claimed-applications.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { AddressComponent } from './components/address/address.component';
+import { MatRadioModule } from '@angular/material/radio';
+import { OfficalFormComponent } from './components/offical-form/offical-form.component';
+import { VisaReviewComponent } from './components/review/visa-review/visa-review.component';
 
 @NgModule({
   declarations: [
@@ -42,11 +56,21 @@ import { ApplicationProcessComponent } from './components/application-process/ap
     RegistrationComponent,
     LoginComponent,
     ApplicationProcessComponent,
-  
+
     PersonalInfoComponent,
     PassportComponent,
     VisaInformationComponent,
     ReferenceAndStayComponent,
+    PendingApplicationComponent,
+    ClaimedApplicationsComponent,
+    SidenavComponent,
+
+    AddressComponent,
+
+    OfficalFormComponent,
+
+    VisaReviewComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -65,9 +89,16 @@ import { ApplicationProcessComponent } from './components/application-process/ap
     MatDatepickerModule,
     MatNativeDateModule,
     MatCheckboxModule,
-    FlexLayoutModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    HelpfulMaterialModule,
+    MatTableModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatRadioModule
 
   ],
   providers: [
