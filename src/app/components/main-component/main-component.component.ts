@@ -15,7 +15,20 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   templateUrl: './main-component.component.html',
   styleUrls: ['./main-component.component.css']
 })
-export class MainComponentComponent implements OnInit {
+export class MainComponentComponent  {
+  // step = 0;
+
+  // setStep(index: number) {
+  //   this.step = index;
+  // }
+
+  // nextStep() {
+  //   this.step++;
+  // }
+
+  // prevStep() {
+  //   this.step--;
+  // }
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
 

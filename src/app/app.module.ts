@@ -1,16 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
+
+import { AppComponent } from './app.component';
+
+
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
+import { MatSliderModule } from '@angular/material/slider';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatInputModule} from '@angular/material/input';
@@ -26,12 +29,19 @@ import { PersonalInfoComponent } from './components/personal-info/personal-info.
 import { PassportComponent } from './components/passport/passport.component';
 import { VisaInformationComponent } from './components/visa-information/visa-information.component';
 import { ReferenceAndStayComponent } from './components/reference-and-stay/reference-and-stay.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 import {HttpClientModule} from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { LoginComponent } from './components/login/login.component';
 import { ApplicationProcessComponent } from './components/application-process/application-process.component';
-import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { StatusComponent } from './components/status/status.component';
+import { MatTableModule } from '@angular/material/table';
+import { ApplicantListComponent } from './components/applicant-list/applicant-list.component';
+import { ApplicantDetailComponent } from './components/applicant-detail/applicant-detail.component';
+import { UploadDocumentsComponent } from './components/upload-documents/upload-documents.component';
+import { NgMatSearchBarModule } from 'ng-mat-search-bar';
 
 @NgModule({
   declarations: [
@@ -47,7 +57,10 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     PassportComponent,
     VisaInformationComponent,
     ReferenceAndStayComponent,
-    ToolbarComponent,
+    StatusComponent,
+    ApplicantListComponent,
+    ApplicantDetailComponent,
+    UploadDocumentsComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,8 +80,11 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     MatNativeDateModule,
     MatCheckboxModule,
     HttpClientModule,
-    MatIconModule
-
+    MatIconModule,
+    MatDialogModule,
+    MatTableModule,
+    MatExpansionModule,
+    NgMatSearchBarModule
   ],
   providers: [
     {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher},

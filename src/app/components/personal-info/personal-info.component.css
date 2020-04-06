@@ -1,5 +1,5 @@
 .mat-stepper-horizontal {
-    margin-top: 5%;
+    margin-top: 15%;
 }
 
 .mat-form-field {
@@ -15,4 +15,18 @@
     min-width: 15%;
     max-width: 50%;
     width: 100%;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+    flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.example-headers-align .mat-form-field+.mat-form-field {
+    margin-left: 10%;
 }

@@ -16,6 +16,7 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ['./personal-info.component.css']
 })
 export class PersonalInfoComponent implements OnInit {
+  step = 0;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
 
@@ -41,6 +42,19 @@ export class PersonalInfoComponent implements OnInit {
         secondCtrl: ['', Validators.required]
       });
 
+  }
+
+
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
   }
 
 }

@@ -11,6 +11,7 @@ import { Passport } from 'src/models/Passport.model';
 export class PassportComponent implements OnInit {
   firstFormGroup: FormGroup;
   Eritrean = true;
+  step=0;
 
   countries: Country [] = [
     {value: 'ER', Code: 'Eritrean'},
@@ -30,5 +31,15 @@ export class PassportComponent implements OnInit {
       firstCtrl: ['', Validators.required]
     });
   }
+  setStep(index: number) {
+    this.step = index;
+  }
 
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
+  }
 }
