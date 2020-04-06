@@ -13,11 +13,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-<<<<<<< HEAD
     margin-top: 11%;
-=======
-    margin-top: 15%;
->>>>>>> bd550bf4ffea612ae63110a1c2a91dbf73f0a1b6
 }
 
 .example-button-row button {

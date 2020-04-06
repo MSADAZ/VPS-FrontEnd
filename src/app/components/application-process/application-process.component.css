@@ -11,18 +11,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-<<<<<<< HEAD
     margin-top: 1%;
 }
 
 .example-margin {
     /* margin: 0 10px; */
-=======
-    margin-top: 10%;
-  }
-  .example-margin {
-    margin: 0 10px;
->>>>>>> bd550bf4ffea612ae63110a1c2a91dbf73f0a1b6
     display: flex;
 }
 

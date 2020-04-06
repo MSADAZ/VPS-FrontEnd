@@ -36,17 +36,14 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { LoginComponent } from './components/login/login.component';
 import { ApplicationProcessComponent } from './components/application-process/application-process.component';
-<<<<<<< HEAD
 import { StatusComponent } from './components/status/status.component';
-import { MatTableModule } from '@angular/material/table';
 import { ApplicantListComponent } from './components/applicant-list/applicant-list.component';
 import { ApplicantDetailComponent } from './components/applicant-detail/applicant-detail.component';
 import { UploadDocumentsComponent } from './components/upload-documents/upload-documents.component';
 import { NgMatSearchBarModule } from 'ng-mat-search-bar';
-=======
 import { PendingApplicationComponent } from './components/pending-application/pending-application.component';
 import {MatTableModule} from '@angular/material/table';
-import { HelpfulMaterialModule }   from './components/MatModules';
+import { HelpfulMaterialModule } from './components/MatModules';
 import { ClaimedApplicationsComponent } from './components/claimed-applications/claimed-applications.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -59,7 +56,6 @@ import { AddressComponent } from './components/address/address.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { OfficalFormComponent } from './components/offical-form/offical-form.component';
 import { VisaReviewComponent } from './components/review/visa-review/visa-review.component';
->>>>>>> bd550bf4ffea612ae63110a1c2a91dbf73f0a1b6
 
 @NgModule({
   declarations: [
@@ -75,12 +71,10 @@ import { VisaReviewComponent } from './components/review/visa-review/visa-review
     PassportComponent,
     VisaInformationComponent,
     ReferenceAndStayComponent,
-<<<<<<< HEAD
     StatusComponent,
     ApplicantListComponent,
     ApplicantDetailComponent,
     UploadDocumentsComponent,
-=======
     PendingApplicationComponent,
     ClaimedApplicationsComponent,
     SidenavComponent,
@@ -90,8 +84,7 @@ import { VisaReviewComponent } from './components/review/visa-review/visa-review
     OfficalFormComponent,
 
     VisaReviewComponent,
-    
->>>>>>> bd550bf4ffea612ae63110a1c2a91dbf73f0a1b6
+
   ],
   imports: [
     BrowserModule,
@@ -112,12 +105,10 @@ import { VisaReviewComponent } from './components/review/visa-review/visa-review
     MatCheckboxModule,
     HttpClientModule,
     MatIconModule,
-<<<<<<< HEAD
     MatDialogModule,
     MatTableModule,
     MatExpansionModule,
-    NgMatSearchBarModule
-=======
+    NgMatSearchBarModule,
     HelpfulMaterialModule,
     MatTableModule,
     LayoutModule,
@@ -126,8 +117,6 @@ import { VisaReviewComponent } from './components/review/visa-review/visa-review
     MatGridListModule,
     MatCardModule,
     MatRadioModule
-
->>>>>>> bd550bf4ffea612ae63110a1c2a91dbf73f0a1b6
   ],
   providers: [
     {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher},
