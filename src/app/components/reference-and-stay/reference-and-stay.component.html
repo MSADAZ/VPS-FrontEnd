@@ -1,56 +1,77 @@
 <form [formGroup]="secondFormGroup" class="inputForm">
-    <div>
-        <mat-label>3.4.1 Address in Eritrea: </mat-label>
-    </div>
-    <mat-form-field>
-        <mat-label>Stayin At</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="staying at" required>
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>Name of Hotel</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="name of hotel" required>
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>Street Address</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="street address" required>
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>City</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="city" required>
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>State/Zoba</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="state or zone" required>
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>Telephone Number</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="phone Number" required>
-    </mat-form-field>
-    <div>
-        <mat-label>3.4.2 Contact Person: </mat-label>
-    </div>
-    <mat-form-field>
-        <mat-label> First Name</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="name" required>
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label> Father's Name</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="Father's name" required>
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label> Grand Father's Name</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="grand father's name" required>
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>Telephone Number</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="phone number" required>
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>Realtionship </mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="realtionship" required>
-    </mat-form-field>
-    <div>
-        <button mat-raised-button matStepperPrevious color="primary">Back</button>
-        <button mat-raised-button matStepperNext color="primary">Next</button>
-    </div>
+    <mat-accordion>
+        <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    3.4.1 Address in Eritrea:
+                </mat-panel-title>
+                <mat-icon>map</mat-icon>
+            </mat-expansion-panel-header>
+
+            <mat-form-field>
+                <mat-label>Stayin At</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="staying at" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Name of Hotel</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="name of hotel" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Street Address</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="street address" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>City</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="city" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>State/Zoba</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="state or zone" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Telephone Number</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="phone Number" required>
+            </mat-form-field>
+            <mat-action-row>
+                <button mat-button color="primary" (click)="nextStep()">Next</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+        <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    3.4.2 Contact Person:
+                </mat-panel-title>
+                <mat-icon>account_circle</mat-icon>
+            </mat-expansion-panel-header>
+            <mat-form-field>
+                <mat-label> First Name</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="name" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label> Father's Name</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="Father's name" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label> Grand Father's Name</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="grand father's name" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Telephone Number</mat-label>
+                <mat-icon matSuffix>phone</mat-icon>
+                <input matInput formControlName="secondCtrl" placeholder="phone number" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Realtionship </mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="realtionship" required>
+            </mat-form-field>
+            <mat-action-row>
+                <button mat-button color="primary" (click)="nextStep()">Next</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+        <div>
+            <button mat-raised-button matStepperPrevious color="primary">Back</button>
+            <button mat-raised-button matStepperNext color="primary">Next</button>
+        </div>
+
+    </mat-accordion>
 </form>

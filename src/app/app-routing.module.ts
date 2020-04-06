@@ -12,6 +12,8 @@ import { PendingApplicationComponent } from './components/pending-application/pe
 import { ClaimedApplicationsComponent } from './components/claimed-applications/claimed-applications.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { AddressComponent } from './components/address/address.component';
+import { ApplicantStatusComponent } from './components/applicant-status/applicant-status.component';
+
 
 
 
@@ -25,6 +27,8 @@ const routes: Routes = [
   {path: 'ApplicantList', component: ApplicantListComponent},
   {path: 'detail', component: ApplicantDetailComponent},
   {path: 'pending', component: PendingApplicationComponent},
+  {path: 'applicatStatus', component: ApplicantStatusComponent},
+
   {path: 'side', component: SidenavComponent, children: [
     {
       path: 'claimed', component: ClaimedApplicationsComponent

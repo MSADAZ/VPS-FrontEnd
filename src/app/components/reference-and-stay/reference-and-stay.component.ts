@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup, Validators, FormControl, FormGroupDirective, Ng
 export class ReferenceAndStayComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
+  step = 0;
 
   constructor(private _formBuilder: FormBuilder) { }
 
@@ -19,6 +20,17 @@ export class ReferenceAndStayComponent implements OnInit {
     this.secondFormGroup = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
     });
+  }
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
   }
 
 }

@@ -56,6 +56,7 @@ import { AddressComponent } from './components/address/address.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { OfficalFormComponent } from './components/offical-form/offical-form.component';
 import { VisaReviewComponent } from './components/review/visa-review/visa-review.component';
+import { ApplicantStatusComponent } from './components/applicant-status/applicant-status.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +85,8 @@ import { VisaReviewComponent } from './components/review/visa-review/visa-review
     OfficalFormComponent,
 
     VisaReviewComponent,
+
+    ApplicantStatusComponent,
 
   ],
   imports: [

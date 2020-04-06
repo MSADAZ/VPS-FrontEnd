@@ -1,0 +1,23 @@
+<form [formGroup]="firstFormGroup" class="inputForm">
+    <p> Your Applicattion Status As of today</p>
+    <mat-form-field>
+        <mat-label>Process Id: </mat-label>
+        <input matInput placeholder="Process Id" formControlName="firstCtrl" required value="pid345678"> pid345678
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Application Received date: </mat-label>
+        <input matInput placeholder="Applied date" formControlName="firstCtrl" required type="date"> 2-12-2019
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Application Status</mat-label>
+        <input matInput placeholder="Status" formControlName="firstCtrl" required> In process
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Reason if Rejected or pending</mat-label>
+        <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5">
+          pending due to payment not received
+        </textarea>
+    </mat-form-field>
+</form>

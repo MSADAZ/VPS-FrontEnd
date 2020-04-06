@@ -38,9 +38,9 @@ const ELEMENT_DATA: Status[] = [
   {position: 1, stage: 'Front Desk', applicationReceiveddate: '12-09-2017', applicationCompletededdate: '12-09-2017', status: 'In Process', reason: ''},
   {position: 2, stage: 'Representative', applicationReceiveddate: '14-09-20111',applicationCompletededdate: '12-09-2017', status: 'In Process' , reason: ''},
   {position: 3, stage: 'Finance', applicationReceiveddate: '13-09-2020', applicationCompletededdate: '12-09-2017', status: 'Pending', reason: 'Payment not received'},
-  {position: 4, stage: 'Authority', applicationReceiveddate: '1-09-2013', applicationCompletededdate: ' ', status: ' ', reason: ' '},
-  {position: 5, stage: 'HQAuthority', applicationReceiveddate: '2-09-20112', applicationCompletededdate: ' ', status: ' ' , reason: ''},
-  {position: 6, stage: 'HQRep', applicationReceiveddate: '23-07-2017', applicationCompletededdate: ' ', status: ' ', reason: ''},
+  {position: 4, stage: 'Authority', applicationReceiveddate: ' ', applicationCompletededdate: ' ', status: ' ', reason: ' '},
+  {position: 5, stage: 'HQAuthority', applicationReceiveddate: ' ', applicationCompletededdate: ' ', status: ' ' , reason: ''},
+  {position: 6, stage: 'HQRep', applicationReceiveddate: ' ', applicationCompletededdate: ' ', status: ' ', reason: ''},
 
 
 ];
