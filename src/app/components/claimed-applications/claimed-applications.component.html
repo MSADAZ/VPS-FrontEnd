@@ -1,0 +1,127 @@
+     <h2>Application For Daniel</h2>
+<mat-accordion>
+      <!-------------oneComponent-->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Personal Information
+        </mat-panel-title>
+        <mat-panel-description>
+          Type your name and age
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-form-field>
+        <mat-label>First name</mat-label>
+        <input matInput>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Age</mat-label>
+        <input matInput type="number" min="1">
+      </mat-form-field>
+    </mat-expansion-panel>
+        <!-------end of Component-->
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            Passport and Nationality
+        </mat-panel-title>
+             
+
+        <mat-panel-description>
+          Currently I am {{panelOpenState ? 'open' : 'closed'}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>I'm visible because I am open</p>
+      <app-address></app-address>
+    </mat-expansion-panel>
+    <!-------------oneComponent-->
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            Visa Information
+        </mat-panel-title>
+        <mat-panel-description>
+          Currently I am {{panelOpenState ? 'open' : 'closed'}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>I'm visible because I am open</p>
+      
+    </mat-expansion-panel>
+    <!-------end of Component-->
+      <!-------------oneComponent-->
+      <mat-expansion-panel (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+    Reference and Stay
+</mat-panel-title>
+<mat-panel-description>
+Currently I am {{panelOpenState ? 'open' : 'closed'}}
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>I'm visible because I am open</p>
+</mat-expansion-panel>
+<!-------end of Component-->
+      <!-------------oneComponent-->
+      <mat-expansion-panel (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+    People Traveling
+</mat-panel-title>
+<mat-panel-description>
+Currently I am {{panelOpenState ? 'open' : 'closed'}}
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>I'm visible because I am open</p>
+</mat-expansion-panel>
+<!-------end of Component-->
+ <!-------------oneComponent-->
+<mat-expansion-panel (opened)="panelOpenState = true"
+(closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+    Upload Documents
+</mat-panel-title>
+<mat-panel-description>
+Currently I am {{panelOpenState ? 'open' : 'closed'}}
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>I'm visible because I am open</p>
+</mat-expansion-panel>
+<!-------end of Component-->
+ <!-------------oneComponent-->
+<mat-expansion-panel (opened)="panelOpenState = true"
+(closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+    Ememrgency Contact
+</mat-panel-title>
+<mat-panel-description>
+Currently I am {{panelOpenState ? 'open' : 'closed'}}
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>I'm visible because I am open</p>
+</mat-expansion-panel>
+<!-------end of Component-->
+ <!-------------oneComponent-->
+ <mat-expansion-panel (opened)="panelOpenState = true"
+ (closed)="panelOpenState = false">
+ <mat-expansion-panel-header>
+ <mat-panel-title>
+     Payment
+ </mat-panel-title>
+ <mat-panel-description>
+ Currently I am {{panelOpenState ? 'open' : 'closed'}}
+ </mat-panel-description>
+ </mat-expansion-panel-header>
+ <p>I'm visible because I am open</p>
+ </mat-expansion-panel>
+ <!-------end of Component-->
+ <app-offical-form></app-offical-form>
+  </mat-accordion>
+ 

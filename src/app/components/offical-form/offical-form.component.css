@@ -1,0 +1,14 @@
+.example-card {
+    /* max-width: 400px; */
+    width: 100%;
+    margin-top: 1%;
+  }
+  .full-width {
+    /* width: 80%; */
+    margin-left: 8px;
+  }
+  button{
+      
+      margin-right: 3px;
+      align-items: center;
+  }

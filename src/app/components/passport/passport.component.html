@@ -1,4 +1,5 @@
 <form [formGroup]="firstFormGroup" class="inputForm">
+<<<<<<< HEAD
     <mat-accordion>
         <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
             <mat-expansion-panel-header>
@@ -23,6 +24,28 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
+=======
+    <!-- <ng-template matStepLabel>Passport and Nationality</ng-template> -->
+    <div>
+        <mat-label>3.2.1 Nationality: </mat-label>
+    </div>
+    <mat-form-field>
+        <mat-label>Current Nationality</mat-label>
+        <input matInput formControlName="secondCtrl" placeholder="Nationality" required>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Prior or Other Nationality</mat-label>
+        <input matInput formControlName="secondCtrl" placeholder="PriorNationality" required>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Country By Birth</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let country of countries" [value]="country.value">
+                {{country.Code}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+>>>>>>> bd550bf4ffea612ae63110a1c2a91dbf73f0a1b6
 
 
 
